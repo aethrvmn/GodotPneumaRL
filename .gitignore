@@ -161,7 +161,7 @@ cython_debug/
 
 # Godot
 .godot/
-*.x86_64
+.x86_64
 *.pck
 
 # Godot-specific ignores
