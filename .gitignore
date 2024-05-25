@@ -163,6 +163,7 @@ cython_debug/
 .godot/
 *.x86_64
 *.pck
+*.sh
 
 # Godot-specific ignores
 .import/
@@ -184,3 +185,4 @@ mono_crash.*.json
 
 # Random stuff
 logs/
+build/
