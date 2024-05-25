@@ -42,10 +42,11 @@ func _process(delta):
 func _on_player_death():
     var i = 0
     for player in players.get_children():
+        player.ai_controller.done = true
+        player.ai_controller.needs_reset = true
+        player.ai_controller.reset()
         player.position = player_starting_pos[i]
         player.health = 100
-        player.ai_controller.done = true
-        player.ai_controller.reset()
         i += 1
     var j = 0
     for bamboo in bamboos.get_children():
