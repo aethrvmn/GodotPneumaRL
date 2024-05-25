@@ -15,7 +15,7 @@ from godot_rl.core.utils import can_import
 from godot_rl.wrappers.onnx.stable_baselines_export import export_ppo_model_as_onnx
 from godot_rl.wrappers.stable_baselines_wrapper import StableBaselinesGodotEnv
 
-def main(policy_name=None, policy=None, parseargs=None):
+def main(policy_name=None, policy=None, parseargs=None, seed=None, speedup=None):
     if can_import("ray"):
         print("WARNING: SB3 and ray[rllib] are not compatible.")
 
@@ -71,9 +71,9 @@ def main(policy_name=None, policy=None, parseargs=None):
     env = StableBaselinesGodotEnv(
         env_path=args.env_path,
         show_window=args.viz,
-        seed=args.seed,
+        seed=args.seed if seed is None else seed,
         n_parallel=args.n_parallel,
-        speedup=args.speedup
+        speedup=args.speedup if speedup is None else speedup
     )
     env = VecMonitor(env)
 
