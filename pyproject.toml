@@ -4,7 +4,6 @@ version = "0.1.0"
 description = "Godot training env for MARL"
 authors = ["Vasilis Valatsos <vasilvalat@gmail.com>"]
 readme = "README.md"
-package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -15,6 +14,7 @@ lz4 = "^4.3.3"
 godot-rl = {url = "https://github.com/edbeeching/godot_rl_agents/archive/refs/heads/main.zip"}
 pettingzoo = "^1.24.3"
 tensorboard = "^2.16.2"
+tensorboard-reducer = "^0.3.1"
 
 
 [build-system]

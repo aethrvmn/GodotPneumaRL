@@ -1991,6 +1991,27 @@ files = [
 ]
 
 [[package]]
+name = "tensorboard-reducer"
+version = "0.3.1"
+description = "Reduce multiple TensorBoard runs to new event (or CSV) files"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "tensorboard-reducer-0.3.1.tar.gz", hash = "sha256:4e414d2c84c330e837c0acd728a2f74317d086003e87cb76429a24f082dbf66b"},
+    {file = "tensorboard_reducer-0.3.1-py2.py3-none-any.whl", hash = "sha256:0196a8ec49b3c4535fe42a13dd5407953622e169985fc0ad5f7528bdfba5afbf"},
+]
+
+[package.dependencies]
+numpy = ">=1.19"
+pandas = ">=1.0.0"
+tensorboard = ">=2.0"
+tqdm = ">=4.0"
+
+[package.extras]
+excel = ["openpyxl"]
+test = ["pytest", "pytest-cov", "torch (>=1.6)"]
+
+[[package]]
 name = "tifffile"
 version = "2024.5.10"
 description = "Read and write TIFF files"
@@ -2204,4 +2225,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "2d575ca622be4eb61953716f1811accd9330cdbd4ad0ceee31700058e486e7e6"
+content-hash = "130e4f2fe889802eb5d4d17d949cced5e88a8248c0fe9f25faabd232c2647259"
