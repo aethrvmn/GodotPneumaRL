@@ -34,37 +34,37 @@ var _player: Node2D
 
 
 func _ready():
-    add_to_group("AGENT")
+	add_to_group("AGENT")
 
 
 func init(player: Node2D):
-    _player = player
+	_player = player
 
 
 #-- Methods that need implementing using the "extend script" option in Godot --#
 func get_obs() -> Dictionary:
-    assert(false, "the get_obs method is not implemented when extending from ai_controller")
-    return {"obs": []}
+	assert(false, "the get_obs method is not implemented when extending from ai_controller")
+	return {"obs": []}
 
 
 func get_reward() -> float:
-    assert(false, "the get_reward method is not implemented when extending from ai_controller")
-    return 0.0
+	assert(false, "the get_reward method is not implemented when extending from ai_controller")
+	return 0.0
 
 
 func get_action_space() -> Dictionary:
-    assert(
-        false,
-        "the get get_action_space method is not implemented when extending from ai_controller"
-    )
-    return {
-        "example_actions_continous": {"size": 2, "action_type": "continuous"},
-        "example_actions_discrete": {"size": 2, "action_type": "discrete"},
-    }
+	assert(
+		false,
+		"the get get_action_space method is not implemented when extending from ai_controller"
+	)
+	return {
+		"example_actions_continous": {"size": 2, "action_type": "continuous"},
+		"example_actions_discrete": {"size": 2, "action_type": "discrete"},
+	}
 
 
 func set_action(action) -> void:
-    assert(false, "the set_action method is not implemented when extending from ai_controller")
+	assert(false, "the set_action method is not implemented when extending from ai_controller")
 
 
 #-----------------------------------------------------------------------------#
@@ -73,47 +73,47 @@ func set_action(action) -> void:
 #-- Methods that sometimes need implementing using the "extend script" option in Godot --#
 # Only needed if you are recording expert demos with this AIController
 func get_action() -> Array:
-    assert(false, "the get_action method is not implemented in extended AIController but demo_recorder is used")
-    return []
+	assert(false, "the get_action method is not implemented in extended AIController but demo_recorder is used")
+	return []
 
 # -----------------------------------------------------------------------------#
 
 func _physics_process(delta):
-    n_steps += 1
-    if n_steps > reset_after:
-        needs_reset = true
+	n_steps += 1
+	if n_steps > reset_after:
+		needs_reset = true
 
 
 func get_obs_space():
-    # may need overriding if the obs space is complex
-    var obs = get_obs()
-    return {
-        "obs": {"size": [len(obs["obs"])], "space": "box"},
-    }
+	# may need overriding if the obs space is complex
+	var obs = get_obs()
+	return {
+		"obs": {"size": [len(obs["obs"])], "space": "box"},
+	}
 
 
 func reset():
-    n_steps = 0
-    needs_reset = false
+	n_steps = 0
+	needs_reset = false
 
 
 func reset_if_done():
-    if done:
-        reset()
+	if done:
+		reset()
 
 
 func set_heuristic(h):
-    # sets the heuristic from "human" or "model" nothing to change here
-    heuristic = h
+	# sets the heuristic from "human" or "model" nothing to change here
+	heuristic = h
 
 
 func get_done():
-    return done
+	return done
 
 
 func set_done_false():
-    done = false
+	done = false
 
 
 func zero_reward():
-    reward = 0.0
+	reward = 0.0

@@ -11,33 +11,33 @@ extends AIController2D
 @onready var move: int
 
 func get_obs() -> Dictionary:
-    var dict = {"obs":[
-    player.position.x,
-    player.position.y,
-    player.health,
-    player.experience,
-    ]}
-    for bamboo in bamboos.get_children():
-        dict["obs"].append(bamboo.position.x)
-        dict["obs"].append(bamboo.position.y)
-        dict["obs"].append(bamboo.health)
-        dict["obs"].append(bamboo.position.direction_to(player.position).x)
-        dict["obs"].append(bamboo.position.direction_to(player.position).y)
-    return dict
+	var dict = {"obs":[
+	player.position.x,
+	player.position.y,
+	player.health,
+	player.experience,
+	]}
+	for bamboo in bamboos.get_children():
+		dict["obs"].append(bamboo.position.x)
+		dict["obs"].append(bamboo.position.y)
+		dict["obs"].append(bamboo.health)
+		dict["obs"].append(bamboo.position.direction_to(player.position).x)
+		dict["obs"].append(bamboo.position.direction_to(player.position).y)
+	return dict
 
 func get_reward() -> float:	
-    return reward
-    
+	return reward
+	
 func get_action_space() -> Dictionary:
-    return {
-        "move" : {
-            "size": 5,
-            "action_type": "discrete"
-        }
-    }
-    
+	return {
+		"move" : {
+			"size": 5,
+			"action_type": "discrete"
+		}
+	}
+	
 func set_action(action) -> void:
-    move = action["move"]
+	move = action["move"]
 # -----------------------------------------------------------------------------#
 
 #-- Methods that can be overridden if needed --#

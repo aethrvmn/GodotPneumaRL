@@ -1395,7 +1395,7 @@ zoom = Vector2(0.21, 0.21)
 
 [node name="Sync" type="Node" parent="."]
 script = ExtResource("7_c27o5")
-speed_up = 20.0
+speed_up = 100.0
 
 [node name="WorldTimer" type="Timer" parent="."]
 unique_name_in_owner = true
