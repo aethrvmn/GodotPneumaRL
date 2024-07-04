@@ -1388,6 +1388,21 @@ shape = SubResource("WorldBoundaryShape2D_kp00i")
 position = Vector2(204, -105)
 collision_mask = 7
 
+[node name="Player2" parent="Players" instance=ExtResource("1_ykwem")]
+position = Vector2(388.727, 348.286)
+
+[node name="Player3" parent="Players" instance=ExtResource("1_ykwem")]
+position = Vector2(-239.273, -797.714)
+
+[node name="Player4" parent="Players" instance=ExtResource("1_ykwem")]
+position = Vector2(-517.273, 897.286)
+
+[node name="Player5" parent="Players" instance=ExtResource("1_ykwem")]
+position = Vector2(-918.273, -34.7139)
+
+[node name="Player6" parent="Players" instance=ExtResource("1_ykwem")]
+position = Vector2(-47.2732, 201.286)
+
 [node name="Overworld" type="Camera2D" parent="."]
 unique_name_in_owner = true
 position = Vector2(955, -128)
@@ -1395,7 +1410,6 @@ zoom = Vector2(0.21, 0.21)
 
 [node name="Sync" type="Node" parent="."]
 script = ExtResource("7_c27o5")
-speed_up = 100.0
 
 [node name="WorldTimer" type="Timer" parent="."]
 unique_name_in_owner = true

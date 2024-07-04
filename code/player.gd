@@ -38,11 +38,10 @@ func add_exp(exp_amount):
 	experience += exp_amount
 	ai_controller.reward = experience
 	exp_label.text = "Experience\n"+str(experience)
-
 	
 func change_hp(dmg):
 	health += dmg
-	#ai_controller.reward += dmg/10
+	ai_controller.reward += dmg/10
 	if health <= 0:
 		health = 0
 		add_exp(-1)
