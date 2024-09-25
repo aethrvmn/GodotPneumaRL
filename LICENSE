@@ -1,21 +1,61 @@
-MIT License
+Don't Be Evil License (DBEL) 1.0
 
-Copyright (c) 2020 Peter DV
+1. Acceptance
+By using, copying, modifying, or distributing the source code, training data, training environment, or its associated machine learning model weights (collectively the "Software"), you agree to comply with all terms outlines in this license.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+2. Copyright License
+The Licensor (defined below) grants you a non-exclusive, worldwide, royalty-free, non-sublicensable, non-transferable clicense to use, copy, modify, and distribute the Software, including associated model weights, training data, and training environments, subject to the conditions set forth in this license. This includes the right to create and distribute derivative works of the Software, provided that the limitations below are observed.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+3. Non-Commercial Use Only
+You may use, copy, modify, and distribute the Software and derivative works solely for non-commercial purposes. Non-commercial purposes include, but are not limited to:
+- Personal research and study.
+- Educational and academic projects.
+- Public knowledge and hobby projects
+- Religious observance.
+- Non-commercial research, or AI and machine learning (ML) experimentation.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+4. Distribution and Monetization Provisions
+Any use of the Software or derivative works for profit, or in a business context, including in monetized services and products, requries explicit, seperate permission from the Licensor. The restrictions on commercial use apply to both the source code and any model weights produced by the Software.
+
+Any distribution must include this license, and the non-commercial restriction must be maintained. Weights resulting from use of the Software, including but not limited to training or fine-tuning models, must be shared under this same license, ensuring all restrictions and conditions are preserved.
+
+5. Integrity of the Licensor's Software
+You may not alter, remove, or obscure any functionalities related to payment, donation, or attribution in any distributed version of the Licensed Materials. You must retain all notices of copyright, licensing, and attribution provided by the Licensor in any derivative works.
+
+You may not alter or remove copyright, license, or trademark notices in the Software, and any public mention of the Software must include attribution to the Licensor.
+
+6. Patents
+This license grants you a patent license under any patents held by the Licensor that are directly related to the Software. If you or your company make any claim that the Software infringes on a patent, your rights under this license terminate immediately.
+
+7. Distribution of Modifications
+If you modify the Software, you must 
+- Provide prominent and clear notice of any modifications
+- Retain all original notices of copyright, licensing, and attribution to the Licensor.
+- Distribute modified versions under this license.
+
+8. Fair Use
+Nothing under this license restricts your rights under applicable laws regarding fair use of copyrighted material.
+
+9. No Other Rights
+These terms do not allow you to sublicense, assign, or transfer any of your rights to third parties, except as expressly allowed by the terms.
+
+These terms do not prevent the Licensor from granting licenses to anyone else.
+
+These terms do not imply any other licenses.
+
+No other rights beyond those explicitly stated are granted.
+
+10. Termination
+Your rights under this license will automatically terminate if you breach any of its terms. The Licensor may provide you with a 30-day period to rectify any breach. If you fail to do so, or if you breach the terms again after rectification, your license will terminate permanently.
+
+11. Disclaimer of Warranty
+The Licensed Materials are provides “as-is”, without any warranties, express or implied, including but not limited to warranties of fitness for a particular purpose. The Licensor is not liable for any claims or damages arising from your use of the Licensed Materials.
+
+12. Definitions
+- "Licensor": The entity or individual offering the Licensed Materials under this license.
+- "Licensed Materials": The software, source code, training data, training environment, model weights, and any associated AI/ML components provided under this license.
+- "You": The individual or entity accepting the terms of this license, including any organization or entity that this individual or entity might work for or represent, including any entities under common control.
+- "Your license": The license granted to you for the software under this terms.
+- "Model weights": The machine learning model parameters generated by training or fine-tuning models using the Licensed Materials.
+- "Use": Anything you do with the software requiring your license
+- "Trademark": Trademarks, service marks, and similar rights.
